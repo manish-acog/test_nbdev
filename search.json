@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html#chapter-1",
+    "href": "index.html#chapter-1",
+    "title": "Book1",
+    "section": "Chapter 1",
+    "text": "Chapter 1"
+  },
+  {
+    "objectID": "index.html#chapter-2",
+    "href": "index.html#chapter-2",
+    "title": "Book1",
+    "section": "Chapter 2",
+    "text": "Chapter 2"
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "test_nbdev",
+    "section": "",
+    "text": "def gradient_descent(lr):\n    f = lambda x: x**2\n    df = lambda x: 2*x\n    x0 = 4\n\n    x_values = [x0]\n    fx_values = [f(x0)]\n\n    max_iter = 100\n\n    for i in range(max_iter):\n        grad = df(x_values[-1])\n        x = x_values[-1] - lr * grad\n        x_values.append(x)\n        fx_values.append(f(x))\n\n    x_plot = np.linspace(-5, 5, 100)\n    fx_plot = f(x_plot)\n    plt.plot(x_plot, fx_plot)\n    plt.plot(x_values, fx_values, 'ro-')\n    plt.xlabel('x')\n    plt.ylabel('f(x)')\n    plt.title('Gradient Descent with Learning Rate={}'.format(lr))\n    plt.show()\n\n\nipywidgets.interact(gradient_descent, lr=(0,1,0.01))\n\n\n\n\n<function __main__.gradient_descent(lr)>"
+  }
+]
