@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "test_nbdev"
+  site-url: "https://manish-acog.github.io/test_nbdev"
+  description: "Testing out various functionalities of nb_dev"
+  repo-branch: main
+  repo-url: "https://github.com/manish-acog/test_nbdev"
